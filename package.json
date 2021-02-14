@@ -1,0 +1,48 @@
+{
+  "name": "uplo-opus-connector",
+  "version": "1.0.7",
+  "main": "lib/index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "ts-node src/api.ts",
+    "clean": "rimraf dist es lib",
+    "build": "npm run build:lib & npm run build:umd",
+    "build:lib": "tsc --outDir lib --module commonjs",
+    "build:es": "tsc --outDir es --module es2015",
+    "build:umd": "npm run build:es",
+    "test": "jest",
+    "prepublish": "npm run build"
+  },
+  "dependencies": {
+    "uplo.js": "1.0.2",
+    "fecha": "3.0.2",
+    "file-saver": "2.0.0",
+    "filesize": "3.6.1",
+    "fs-readdir-recursive": "1.1.0",
+    "fs.promises": "0.1.2",
+    "lodash": "4.17.11",
+    "nanoid": "2.0.0",
+    "sanitize-filename": "1.6.1",
+    "uplojs-lib": "1.1.1",
+    "superagent": "4.0.0",
+    "typescript": "3.2.2"
+  },
+  "devDependencies": {
+    "@types/jest": "23.3.12",
+    "@types/node": "10.12.12",
+    "dts-bundle": "0.7.3",
+    "jest": "23.6.0",
+    "ts-jest": "23.10.5",
+    "tslint": "5.11.0"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "transform": {
+      "\\.(ts|tsx)$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "/__tests__/.*\\.(ts|tsx|js)$"
+  }
+}

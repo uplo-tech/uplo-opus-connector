@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "module": "es6",
+    "jsx": "react",
+    "lib": ["dom", "es6", "es7", "es2015", "es2017", "dom.iterable", "scripthost"],
+    "alwaysStrict": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "sourceMap": true,
+    "outDir": "dist",
+    "baseUrl": "./src"
+  },
+  "files": ["src/index.ts"],
+  "include": ["src/**/*.ts", "src/**/*.tsx", "types/*.d.ts", "node_modules/@types/**/*.d.ts"],
+  "exclude": ["dist"]
+}
