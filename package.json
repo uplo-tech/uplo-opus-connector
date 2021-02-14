@@ -23,7 +23,7 @@
     "lodash": "4.17.11",
     "nanoid": "2.0.0",
     "sanitize-filename": "1.6.1",
-    "uplojs-lib": "1.1.1",
+    "uplojs-lib": "1.1.2",
     "superagent": "4.0.0",
     "typescript": "3.2.2"
   },
