@@ -46,7 +46,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 };
 var _this = this;
 import * as s from 'uplo.js';
-import { Client } from './node_modules/uplojs-lib';
+import { Client } from '@davidmgilbert/uplojs-lib';
 import * as agent from 'superagent';
 var connect = s.connect;
 var path = require('path');

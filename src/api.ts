@@ -1,6 +1,6 @@
 import * as s from 'uplo.js'
 import emitter from './emitter'
-import { Client } from './node_modules/uplojs-lib'
+import { Client } from '@davidmgilbert/uplojs-lib'
 import * as agent from 'superagent'
 const connect = s.connect
 const path = require('path')
